@@ -81,8 +81,6 @@ function onDocumentMouseMove(event: MouseEvent) {
   
 }
 
-
-
 const stats = Stats()
 document.body.appendChild(stats.dom)
 

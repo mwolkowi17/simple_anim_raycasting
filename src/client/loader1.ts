@@ -41,17 +41,11 @@ export class Loader1 {
                 if ((child as THREE.Mesh).isMesh) {
                     const m = child as THREE.Mesh
                     //the sphere and plane will not be mouse picked. THe plane will receive shadows while everything else casts shadows.
-                    switch (m.name) {
-                       
-                        case 'Sphere':
-                            m.castShadow = true
-                            break
-                        default:
-                            m.castShadow = true
-                            pickableObjects.push(m)
-                            //store reference to original materials for later
-                           
-                    }
+                    m.castShadow = true
+                    pickableObjects.push(m)
+                    //store reference to original materials for later
+
+
                 }
             })
             scene.add(gltf.scene)
@@ -61,10 +55,10 @@ export class Loader1 {
     play1() {
         if (!this.ifplayed) {
             this.action.play()
-            this.ifplayed=true
+            this.ifplayed = true
             setTimeout(() => {
                 this.action.stop();
-                this.ifplayed=false
+                this.ifplayed = false
             }, 4000);
         }
 
@@ -74,10 +68,10 @@ export class Loader1 {
 
         if (!this.ifplayed1) {
             this.action1.play()
-            this.ifplayed1=true
+            this.ifplayed1 = true
             setTimeout(() => {
                 this.action1.stop();
-                this.ifplayed1=false
+                this.ifplayed1 = false
             }, 4000);
         }
     }
@@ -86,10 +80,10 @@ export class Loader1 {
 
         if (!this.ifplayed2) {
             this.action2.play()
-            this.ifplayed2=true
+            this.ifplayed2 = true
             setTimeout(() => {
                 this.action2.stop();
-                this.ifplayed2=false
+                this.ifplayed2 = false
             }, 4000);
         }
     }
@@ -97,10 +91,10 @@ export class Loader1 {
     play4() {
         if (!this.ifplayed3) {
             this.action3.play()
-            this.ifplayed3=true
+            this.ifplayed3 = true
             setTimeout(() => {
                 this.action3.stop();
-                this.ifplayed3=false
+                this.ifplayed3 = false
             }, 4000);
         }
     }
@@ -108,10 +102,10 @@ export class Loader1 {
     play5() {
         if (!this.ifplayed4) {
             this.action4.play()
-            this.ifplayed4=true
+            this.ifplayed4 = true
             setTimeout(() => {
                 this.action4.stop();
-                this.ifplayed4=false
+                this.ifplayed4 = false
             }, 4000);
         }
     }
@@ -119,10 +113,10 @@ export class Loader1 {
     play6() {
         if (!this.ifplayed5) {
             this.action5.play()
-            this.ifplayed5=true
+            this.ifplayed5 = true
             setTimeout(() => {
                 this.action5.stop();
-                this.ifplayed5=false
+                this.ifplayed5 = false
             }, 4000);
         }
     }
