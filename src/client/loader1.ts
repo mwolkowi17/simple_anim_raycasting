@@ -44,8 +44,6 @@ export class Loader1 {
                     m.castShadow = true
                     pickableObjects.push(m)
                     //store reference to original materials for later
-
-
                 }
             })
             scene.add(gltf.scene)
@@ -60,6 +58,7 @@ export class Loader1 {
                 this.action.stop();
                 this.ifplayed = false
             }, 4000);
+          
         }
 
     }

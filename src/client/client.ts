@@ -53,27 +53,21 @@ function onDocumentMouseMove(event: MouseEvent) {
 
     if (intersects.length > 0) {
         if( intersects[0].object===pickableObjects[0]){
-            console.log('paf1')
             loader1.play1()
         }
         if( intersects[0].object===pickableObjects[1]){
-            console.log('paf2')
             loader1.play2()
         }
         if( intersects[0].object===pickableObjects[2]){
-            console.log('paf2')
             loader1.play3()
         }
         if( intersects[0].object===pickableObjects[3]){
-            console.log('paf2')
             loader1.play4()
         }
         if( intersects[0].object===pickableObjects[4]){
-            console.log('paf2')
             loader1.play5()
         }
         if( intersects[0].object===pickableObjects[5]){
-            console.log('paf2')
             loader1.play6()
         }
          
